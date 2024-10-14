@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The All in One</title>
+    <style>
+      /* Apply a dark theme */
+      body {
+        background-color: #121212;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1, h2 {
+        color: #ffffff;
+        text-align: center;
+      }
+
+      a {
+        color: #1e90ff;
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* Style the video elements */
+      video {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 20px auto;
+        border: 2px solid #444;
+        border-radius: 8px;
+      }
+
+      /* Style the image gallery */
+      #MadiPictures {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      #MadiPictures img {
+        width: 100%;
+        height: auto;
+        border: 2px solid #444;
+        border-radius: 8px;
+        object-fit: cover;
+        transition: transform 0.2s ease-in-out;
+      }
+
+      #MadiPictures img:hover {
+        transform: scale(1.05);
+      }
+
+      /* Responsive design */
+      @media (max-width: 600px) {
+        body {
+          padding: 10px;
+        }
+
+        a {
+          font-size: 14px;
+        }
+
+        video {
+          margin: 10px auto;
+        }
+
+        h1, h2 {
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Com in 1 second</h1>
+
+    <a href="https://dropvault.cloud/folder/cYcwfB5G">Sophie Rain Spiderman video</a>
+    <a href="https://mega.nz/folder/FTMUya4T#Za5G0zvPdK-I5Qp0Jk_Tjw/folder/xP1m0aDR">Sophie Rain Bilder collection</a>
+    <a href="https://dropvault.cloud/folder/RTUNVirr">Leah Halton Pictures</a>
+    <a href="https://dropvault.cloud/folder/f8Mi1kfe">Leah Halton Video</a>
+
+    <!-- Displaying the videos -->
+    <video id="MadisonFootball" src="MadisonFootball.mp4" alt="MadisonFootball" controls></video>
+    <video id="MadisonBed" src="MadisonBed.mp4" alt="MadisonBed" controls></video>
+
+    <!-- Displaying the images -->
+    <h2>Madison Pictures</h2>
+    <div id="MadiPictures">
+      <img src="photo 1.jpg" alt="Photo 1">
+      <img src="photo 2.jpg" alt="Photo 2">
+      <img src="photo 3.jpg" alt="Photo 3">
+      <img src="photo 4.jpg" alt="Photo 4">
+      <img src="photo 5.jpg" alt="Photo 5">
+      <img src="photo 6.jpg" alt="Photo 6">
+      <img src="photo 7.jpg" alt="Photo 7">
+      <img src="photo 8.jpg" alt="Photo 8">
+      <img src="photo 9.jpg" alt="Photo 9">
+      <img src="photo 10.jpg" alt="Photo 10">
+      <img src="photo 11.jpg" alt="Photo 11">
+      <img src="photo 12.jpg" alt="Photo 12">
+      <img src="photo 13.jpg" alt="Photo 13">
+      <img src="photo 14.jpg" alt="Photo 14">
+      <img src="photo 15.jpg" alt="Photo 15">
+      <img src="photo 16.jpg" alt="Photo 16">
+      <img src="photo 17.jpg" alt="Photo 17">
+      <img src="photo 18.jpg" alt="Photo 18">
+      <img src="photo 19.jpg" alt="Photo 19">
+      <img src="photo 20.jpg" alt="Photo 20">
+      <img src="photo 21.jpg" alt="Photo 21">
+      <img src="photo 22.jpg" alt="Photo 22">
+      <img src="photo 23.jpg" alt="Photo 23">
+      <img src="photo 24.jpg" alt="Photo 24">
+      <img src="photo 25.jpg" alt="Photo 25">
+      <img src="photo 26.jpg" alt="Photo 26">
+      <img src="photo 27.jpg" alt="Photo 27">
+      <img src="photo 28.jpg" alt="Photo 28">
+      <img src="photo 29.jpg" alt="Photo 29">
+      <img src="photo 30.jpg" alt="Photo 30">
+    </div>
+
+    <script>
+      // Function to toggle play/pause on a video element
+      function toggleVideoPlay(videoElement) {
+        if (videoElement.paused) {
+          videoElement.play();
+        } else {
+          videoElement.pause();
+        }
+      }
+
+      // Select video elements
+      const madisonFootball = document.getElementById("MadisonFootball");
+      const madisonBed = document.getElementById("MadisonBed");
+
+      // Add event listeners for video play/pause toggle
+      madisonFootball.addEventListener("click", function() {
+        toggleVideoPlay(madisonFootball);
+      });
+      madisonBed.addEventListener("click", function() {
+        toggleVideoPlay(madisonBed);
+      });
+    </script>
+  </body>
+</html>
